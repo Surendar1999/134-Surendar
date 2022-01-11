@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+div {
+    display: inline-block;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+}
+#table {
+   
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    padding: 5px;
+    
+}
+th, td {
+    background-color: yellow;
+    border: 1px black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}

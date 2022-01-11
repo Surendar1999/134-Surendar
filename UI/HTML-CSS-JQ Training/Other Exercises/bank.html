@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  
+  <script>
+      $(document).ready(function(){
+        $(".mPIN-form").hide();
+        $(".Debit-form").hide();
+        $(".mPIN").css("background", "none");
+        $(".Debit").css("background", "none");
+
+$(".login").click(function(){
+  $(".mPIN-form").hide();
+  $(".Debit-form").hide();
+  $(".login-form").show();
+  $(".mPIN").css("background", "none");
+  $(".Debit").css("background", "none");
+  $(".login").css("background", "#fff");
+});
+
+$(".Debit").click(function(){
+  $(".Debit-form").show();
+  $(".login-form").hide();
+  $(".mPIN-form").hide();
+  $(".mPIN").css("background", "none");
+  $(".login").css("background", "none");
+  $(".Debit").css("background", "#fff");
+});
+
+$(".mPIN").click(function(){
+  $(".mPIN-form").show();
+  $(".login-form").hide();
+  $(".Debit-form").hide();
+  $(".mPIN").css("background", "#fff");
+  $(".login").css("background", "none");
+  $(".Debit").css("background", "none");
+});
+
+});
+  </script>
+</head>
+    
+<body>
+    <body>
+
+        <div class="container">
+          <h3>Welcome</h3>
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="">Home</a></li>
+            <div class="container">
+      
+     
+                <div class="login">Login ID</div>
+                <div class="Debit">Debit card no.</div>
+                <div class="mPIN">mPIN</div>
+                
+                <div class="login-form">
+                  <input type="text" placeholder="LOgin ID" class="input"><br />
+                  <input type="password" placeholder="Password" class="input"><br />
+                  <div class="btn">log in</div>
+                  <span><a href="#">I forgot my username or password.</a></span>
+               </div>
+          
+                 <div class="Debit-form">
+                    <input type="text" placeholder="Debit Card No." class="input"><br />
+                    <input type="text" placeholder="Card No." class="input"><br />
+                    <input type="password" placeholder="PIN No." class="input"><br />
+                    <span><a href="#">I forgot my username or password.</a></span>
+                 </div>
+                
+               
+                 <div class="mPIN-form">
+                  <input type="text" placeholder="Customer ID" class="input"><br />
+                  <input type="password" placeholder="mPIN" class="input"><br />
+                  <div class="btn">log in</div>
+                  <span><a href="#">forgot username or password?.</a></span>
+               </div>
+                
+              </div>
+            </div>
+          
+    
+</body>
+</html>

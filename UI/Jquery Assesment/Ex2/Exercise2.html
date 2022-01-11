@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Exercise-2</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrapper {
+            height: 300px;
+            width: 800px;
+            background: lightseagreen;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        textarea {
+            height: 200px;
+            width: 100%;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+            resize: none;
+        }
+        
+        button {
+            margin: 5px;
+            height: 40px;
+            width: 200px;
+            margin-left: 300px;
+            cursor: pointer;
+            background: black;
+            border: none;
+            border-radius: 25px;
+            font-size: 22px;
+            color: yellow;
+        }
+        
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color:ivory;">
+    
+    
+    <div class="wrapper"><textarea id="input"></textarea>
+        <button onclick="calculate()">Calculate</button>
+        <p id="output1"></p>
+        <p id="output2"></p>
+
+
+    </div>
+       <script>
+        const calculate = () => {
+            let input = document.getElementById('input').value;
+            let noc = input.length;
+            let output1 = document.getElementById('output1').innerHTML = "Total Characters=" + noc;
+            let count = input.match(/\w+/g);
+            res = count.length;
+            let output2 = document.getElementById('output2').innerHTML = "Total words=" + res;
+        }
+    </script>
+   
+</body>
+
+</html>

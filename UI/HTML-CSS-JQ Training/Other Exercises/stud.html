@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    
+        <p id="student details"></p>
+        <p id="AllDetails"></p>
+        <script>
+         const student={
+             rollno:"07",
+             fname:"Vishal",
+             grade:"7.08",
+             city:"chennai",
+             sub1:"math",
+             sub2:"english",
+             allDetails:function(){
+                 return this.rollno +" "+ this.fname +" "+this.grade + " " +this.city + " " + this.sub1 +" "+ this.sub2; 
+             }
+
+         }
+         document.getElementById("student details").innerHTML=student.fname+" "+student.grade+" "+student.city+" "+student.sub1+" "+student.sub2;
+         document.getElementById("AllDetails").innerHTML=student.allDetails();
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

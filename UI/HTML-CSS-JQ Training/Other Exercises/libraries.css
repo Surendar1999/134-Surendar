@@ -1,0 +1,7 @@
+body{background:#ffffff;font-family:Arial,sans-serif;font-size:12px;margin:0 auto;color:#444444;overflow-x:hidden;}
+:focus{outline:0;}
+ul{list-style:none;margin:0;padding:0;}
+a{color:#8b8b8b;text-decoration:none;}
+a:hover{color:#6a6a6a;text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+.hidden{display:none;}
